@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tile {
+    background-color: lightgrey;
+    color: rgb(255, 9, 9);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    margin-right: 1px;
+}
+
+.tile input {
+    display: none;
+    text-align: center;
+    font-size: 70px;
+    width: 93px;
+    height: 95px;
+}
+
+#map {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(169, 169, 169);
+    border-radius: 5px;
+}
+
+#tiles {
+    display: grid;
+    align-items: center;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 1px;
+}
+
+#controllers {
+    text-align: center;
+}
+
+#controllers button {
+    cursor: pointer;
+    font-size: 40px;
+    margin: 15px;
+}
+#controllers #check {
+    display: none;
+}
+
+#screen {
+    text-align: center;
+    margin-top: 2.8%;
+    margin-bottom: 1%;
+}
+#screen span {
+    font-size: 50px;
+}
